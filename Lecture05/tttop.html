@@ -15,6 +15,7 @@
         width:30%; height: 300px;
         box-sizing: border-box;
         text-align: center;
+
         }
 
       .second{
@@ -33,20 +34,34 @@
           box-sizing: border-box;
           text-align: center;
           }
+
     </style>
   </head>
   <body>
     <h3>하노이의 탑</h3>
-    <button type="button" onclick="alert('이게 아닌데..')">초기화</button>
-    <div class="parent">
+    <button type="button1">초기화</button>
+    <div id="parent">
         <div class="first"><p>■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■</p>
                         <p>■ ■ ■ ■ ■ ■ ■ ■ ■</p>
                         <p>■ ■ ■ ■ ■ ■ ■</p>
                         <p>■ ■ ■ ■ ■</p>
                         <p>■ ■ ■</p>
-                        <p>■</p></div>
+                        <p>1</p></div>
+    <div id="parent">
         <div class="second">second</div>
         <div class="third"></div>
     </div>
+      </div>
+      <script type="text/javascript">
+  var bDisplay = true;
+  function doDisplay(){
+  	var con = document.getElementById("myDIV");
+  	if(con.style.display=='none'){
+  		con.style.display = 'block';
+  	}else{
+  		con.style.display = 'none';
+  	}
+  }
+  </script>
   </body>
 </html>
