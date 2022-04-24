@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+
+<style>
+    .background {width: 1092px; height: 450px;}
+
+    #red {width: 300px; height: 450px; border: 2px solid red; float: left; margin-left: 60px; text-align: center;}
+    #green {width: 300px; height: 450px; border: 2px solid green; float: left; margin-left: 60px; text-align: center;}
+    #blue {width: 300px; height: 450px; border: 2px solid blue; float: left; margin-left: 60px; text-align: center;}
+
+    .squares {width: 15px; height: 15px; margin: 2px; border: 1px solid black; display: inline-block; margin-top: 15px;} 
+
+    .allSquares {text-align: center; visibility: hidden;}
+</style>
+    
+<body>
+    <p>하노이의 탑</p>
+    <button onclick="Reset()">초기화</button>
+    <p></p>
+    <div class="background">
+        <div id="red">
+            <div>first</div>
+            <div class="allSquares">
+                <div id="redSquares"></div>
+                <div id="yellowSquares"></div>
+                <div id="greenSquares"></div>
+                <div id="blueSquares"></div>
+                <div id="purpleSquares"></div>
+                <div id="blackSquares"></div>
+            </div>
+        </div>
+        <div id="green">second</div>
+        <div id="blue">third</div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
